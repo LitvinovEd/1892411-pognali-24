@@ -1,7 +1,7 @@
 # Личный проект «Погнали» 
 
 * Студент: [Эдуард Литвинов](https://up.htmlacademy.ru/adaptive/24/user/1892411).
-* Наставник: `Евгений Петров` (https://htmlacademy.ru/profile/id617077)
+* Наставник: [Евгений Петров](https://htmlacademy.ru/profile/id617077).
 
 ---
 

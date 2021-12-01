@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали</title>
+</head>
+
+<body class="page-body">
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img src="img/logo_mobile_white.svg" width="96" height="15" alt="Логотип 'Погнали'">
+    </a>
+    <nav class="main-navigation">
+      <button class="main-navigation__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-navigation__wrapper">
+        <ul class="main-navigation__list site-list">
+          <li class="site-list__item">
+            <a href="#">О сервисе</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Направления</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Попутчики</a>
+          </li>
+        </ul>
+        <div class="main-navigation__login user-list">
+          <a class="user-list__login" href="#">
+            Авторизоватся
+          </a>
+        </div>
+        <div class="main-navigation__contacts contacts">
+          <ul class="contacts-list">
+            <li class="contacts-list__item">
+              <a class="contacts-list__item-phone" href="tel:+88005558628">8 800 555-86-28</a>
+            </li>
+            <li class="contacts-item">
+              <a class="contacts-list__item-mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="main-navigation__social-list social-list">
+          <li class="social-list__item">
+            <a href="#">
+              <span class="visually-hidden">facebook</span></a>
+          </li>
+          <li class="social-list__item">
+            <a href="#">
+              <span class="visually-hidden">vkontakte</span></a>
+          </li>
+          <li class="social-list__item">
+            <a href="#">
+              <span class="visually-hidden">instagram</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="page-main__title">Попутчики</h1>
+    <form class="filter-country" action="https://echo.htmlacademy.ru/">
+      <h2 class="filter-country__title">Фильтрация по странам:</h2>
+      <button class="filter-country__button" type="button">
+        <span class="visually-hidden">Открыть фильтр</span>
+      </button>
+      <div class="filter-country__wrapper">
+        <ul class="filter-country__list">
+          <li class="filter-country__item">
+            Европа
+          </li>
+        </ul>
+        <div class="alphabet">
+          <tr class="alphabet__list">
+            <td class="alphabet__item">
+              <a class="alphabet__link" href="#">А</a>
+            </td>
+            <td class="alphabet__item">
+              <a class="alphabet__link" href="#">Б</a>
+            </td>
+            <td class="alphabet__item">
+              <a class="alphabet__link" href="#">В</a>
+            </td>
+            <td class="alphabet__item">
+              <a class="alphabet__link" href="#">Г</a>
+            </td>
+            <td class="alphabet__item">
+              <a class="alphabet__link" href="#">Д</a>
+            </td>
+          </tr>
+          <ul class="alphabet__countries-list">
+            <li class="alphabet__countries-item">
+              Австалия
+            </li>
+            <li class="alphabet__countries-item">
+              Австрия
+            </li>
+            <li class="alphabet__countries-item">
+              Азербайжан
+            </li>
+          </ul>
+        </div>
+        <button class="" type="button">Свернуть</button>
+      </div>
+    </form>
+    <section class="companion">
+      <form class="companion__form" action="https://echo.htmlacademy.ru/">
+        <h2 class="companion__title">Подберите идеального попутчика</h2>
+        <fieldset class="companion__fieldset">
+          <legend class="companion__fieldset-title">Хобби</legend>
+          <button class="companion__button" type="button">
+            <span class="visually-hidden">Открыть список хобби</span>
+          </button>
+          <ul class="companion__list">
+            <li class="companion__item">
+              <label class="companion__control">
+                <input class="companion__input" type="checkbox" name="hobby-dance">
+                <span class="companion__mark"></span>
+                <span>Танцы</span>
+              </label>
+            </li>
+            <li class="companion__item">
+              <label class="companion__control">
+                <input class="companion__input" type="checkbox" name="hobby-songs" checked>
+                <span class="companion__mark"></span>
+                <span>Песни</span>
+              </label>
+            </li>
+            <li class="companion__item">
+              <label class="companion__control">
+                <input class="companion__input" type="checkbox" name="hobby-dream">
+                <span class="companion__mark"></span>
+                <span>Сон</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="companion__fieldset">
+          <legend class="companion__fieldset-title">Музыка</legend>
+          <button class="companion__button" type="button">
+            <span class="visually-hidden">Открыть список музыки</span>
+          </button>
+          <ul class="companion__list">
+            <li class="companion__item">
+              <label class="companion__control">
+                <input class="companion__input" type="checkbox" name="music-hard-rock" checked>
+                <span class="companion__mark"></span>
+                <span>Тяжелый рок</span>
+              </label>
+            </li>
+            <li class="companion__item">
+              <label class="companion__control">
+                <input class="companion__input" type="checkbox" name="music-Russian-rap" checked>
+                <span class="companion__mark"></span>
+                <span>Русский рэп</span>
+              </label>
+            </li>
+            <li class="companion__item">
+              <label class="companion__control">
+                <input class="companion__input" type="checkbox" name="music-eurodance">
+                <span class="companion__mark"></span>
+                <span>Евроденс</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="companion__fieldset">
+          <legend class="companion__fieldset-title">Еда</legend>
+          <button class="companion__button" type="button">
+            <span class="visually-hidden">Открыть список еды</span>
+          </button>
+          <ul class="companion__list">
+            <li class="companion__item">
+              <label class="companion__control">
+                <input class="companion__input" type="checkbox" name="food-pizza">
+                <span class="companion__mark"></span>
+                <span>Пицца</span>
+              </label>
+            </li>
+            <li class="companion__item">
+              <label class="companion__control">
+                <input class="companion__input" type="checkbox" name="food-sushi">
+                <span class="companion__mark"></span>
+                <span>Суши</span>
+              </label>
+            </li>
+            <li class="companion__item">
+              <label class="companion__control">
+                <input class="companion__input" type="checkbox" name="food-borsch">
+                <span class="companion__mark"></span>
+                <span>Борщ</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="companion__fieldset transport">
+          <legend class="companion__fieldset-title">Транспорт</legend>
+          <button class="companion__button" type="button">
+            <span class="visually-hidden">Открыть список транспорта</span>
+          </button>
+          <ul class="companion__list">
+            <li class="companion__item">
+              <label class="companion__control">
+                <input class="companion__input" type="checkbox" name="transport-airplane" checked>
+                <span class="companion__mark"></span>
+                <span class="visually-hidden">Самолет</span>
+              </label>
+            </li>
+            <li class="companion__item">
+              <label class="companion__control">
+                <input class="companion__input" type="checkbox" name="transport-bus" checked>
+                <span class="companion__mark"></span>
+                <span class="visually-hidden">Автобус</span>
+              </label>
+            </li>
+            <li class="companion__item">
+              <label class="companion__control">
+                <input class="companion__input" type="checkbox" name="transport-bike">
+                <span class="companion__mark"></span>
+                <span class="visually-hidden">Велосипед</span>
+              </label>
+            </li>
+            <li class="companion__item">
+              <label class="companion__control">
+                <input class="companion__input" type="checkbox" name="transport-afoot" checked>
+                <span class="companion__mark"></span>
+                <span class="visually-hidden">Пешком</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="companion__fieldset level">
+          <legend class="companion__fieldset-title">Левел</legend>
+          <button class="companion__button" type="button">
+            <span class="visually-hidden">Открыть фильтр левелов</span>
+          </button>
+          <div class="level__wrapper">
+            <label class="level__label">
+              <input class="level__input" type="number" value="30" name="min-level"> -
+            </label>
+            <label class="level__label">
+              <input class="level__input" type="number" value="100" name="max-level">
+            </label>
+          </div>
+          <div class="level__range-scale">
+            <div class="level__range-bar">
+              <button class="level__range-button" type="button">
+                <span class="level__range-mini">
+                  <span class="visually-hidden">Изменить минимальный левел.</span>
+                </span>
+              </button>
+              <button class="level__range-button" type="button">
+                <span class="level__range-mini">
+                  <span class="visually-hidden">Изменить максимальный левел</span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </fieldset>
+        <button class="companion__button-submit" type="submit">Показать</button>
+      </form>
+    </section>
+    <section class="people">
+      <h2 class="visually-hidden">Список возможных попутчиков</h2>
+      <ul class="people__list">
+        <li class="people__item">
+          <div class="people__name__wrapper">
+            <img class="people__photo" src="" alt="Фото Тани Фирсовой" width="" height="">
+            <h3 class="people__name">Таня Фирсова</h3>
+            <span class="people__like">1,5 М</span>
+          </div>
+          <div class="people__tags__wrapper">
+            <h4 class="visually-hidden">ТЭГИ</h4>
+            <ul class="people__tags__list">
+              <li class="people__tags__item">
+                <span class="people__tags__text">#ЗОЖ</span>
+              </li>
+              <li class="people__tags__item">
+                <span class="people__tags__text">#ПП</span>
+              </li>
+              <li class="people__tags__item">
+                <span class="people__tags__text">#Фитнес</span>
+              </li>
+              <li class="people__tags__item">
+                <span class="people__tags__text">#пляж</span>
+              </li>
+              <li class="people__tags__item">
+                <span class="people__tags__text">#авокадо</span>
+              </li>
+              <li class="people__tags__item">
+                <span class="people__tags__text">#смузи</span>
+              </li>
+            </ul>
+          </div>
+          <div class="people__country__wrapper">
+            <h4 class="people__title">Хочет посетить:</h4>
+            <ul class="people__country__list">
+              <li class="people__country__item">
+                <img src="" alt="Флаг Шри-Ланки" width="" height="">
+                <p class="people__country__name">Шри-Ланка</p>
+              </li>
+              <li class="people__country__item">
+                <img src="" alt="Флаг Тайланда" width="" height="">
+                <p class="people__country__name">Тайланд</p>
+              </li>
+              <li class="people__country__item">
+                <img src="" alt="Флаг Сейшелов" width="" height="">
+                <p class="people__country__name">Сейшелы</p>
+              </li>
+            </ul>
+          </div>
+          <div class="people__transport__wrapper">
+            <h4 class="people__title">Трансорт</h4>
+            <ul class="people__transport__list">
+              <li class="people__transport__item">
+                <span class="visually-hidden">Иконка самолета</span>
+              </li>
+              <li class="people__transport__item">
+                <span class="visually-hidden">Иконка автобуса</span>
+              </li>
+              <li class="people__transport__item">
+                <span class="visually-hidden">Иконка велосипеда</span>
+              </li>
+              <li class="people__transport__item">
+                <span class="visually-hidden">Иконка ходьбы</span>
+              </li>
+            </ul>
+            <div class="people__level__wrapper">
+              <h4 class="people__title">Левел</h4>
+              <div class="people__level">
+                <span class="people__level__text">99</span>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <a class="people__show-more" href="#">Показать еще</a>
+      <ul class="people__pages-list">
+        <li class="people__pages-item">
+          <a class="people__pages-link__previous" href="#">
+            <span class="visually-hidden">Предидущая страница</span>
+          </a>
+        </li>
+        <li class="people__pages-item">
+          <a class="people__pages-link__next" href="#">
+            <span class="visually-hidden">Следующая страница</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper-logo">
+      <a class="page-footer__link" href="index.html">
+        <img src="img/logo_mobile_blue.svg" width="96" height="15" alt="Логотип 'Погнали'">
+      </a>
+    </div>
+    <div class="page-footer__social-wrapper">
+      <ul class="page-footer__social-list">
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link" href="#"></a>
+        </li>
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link" href="#"></a>
+        </li>
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link" href="#"></a>
+        </li>
+      </ul>
+    </div>
+    <hr class="page-footer__delimiter">
+    <div class="page-footer__developers">
+      <span class="page-footer__text">Разработано</span>
+      <a class="page-footer__link" href="#"></a>
+    </div>
+  </footer>
+</body>

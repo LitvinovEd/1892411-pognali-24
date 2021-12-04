@@ -1,0 +1,57 @@
+.my-plans {
+  background-color: $modal-color;
+}
+
+.my-plans__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: $text-color;
+}
+
+.my-plans__wrapper {
+  background-color: $white-color;
+  border-radius: 10px
+}
+
+.my-plans__travel {
+
+}
+
+.my-plans__number {
+  font-weight: 500;
+  line-height: 16px;
+  color: $text-color;
+}
+
+.my-plans__country {
+  font-weight: bold;
+  line-height: 16px;
+  color: $text-color;
+}
+
+.my-plans__companion {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $text-color;
+}
+
+.my-plans__date {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $text-color;
+}
+
+.my-plans__change {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $blak-color;
+  opacity: 0.3;
+  text-decoration: none;
+}
+

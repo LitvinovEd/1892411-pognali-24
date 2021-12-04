@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
@@ -16,42 +17,42 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-navigation__wrapper">
-        <ul class="main-navigation__list site-list">
-          <li class="site-list__item">
-            <a href="#">О сервисе</a>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="index.html">О сервисе</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">Направления</a>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="form.html">Направления</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">Попутчики</a>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="catalog.html">Попутчики</a>
           </li>
         </ul>
-        <div class="main-navigation__login user-list">
-          <a class="user-list__login" href="#">
+        <div class="main-navigation__login">
+          <a class="main-navigation__login-item" href="#">
             Авторизоватся
           </a>
         </div>
-        <div class="main-navigation__contacts contacts">
-          <ul class="contacts-list">
-            <li class="contacts-list__item">
-              <a class="contacts-list__item-phone" href="tel:+88005558628">8 800 555-86-28</a>
+        <div class="main-navigation__contacts">
+          <ul class="main-navigation__contacts-list">
+            <li class="main-navigation__contacts-item">
+              <a class="main-navigation__phone" href="tel:+88005558628">8 800 555-86-28</a>
             </li>
-            <li class="contacts-item">
-              <a class="contacts-list__item-mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <li class="main-navigation__contacts-item">
+              <a class="main-navigation__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
           </ul>
         </div>
-        <ul class="main-navigation__social-list social-list">
-          <li class="social-list__item">
+        <ul class="main-navigation__social-list">
+          <li class="main-navigation__social-item">
             <a href="#">
               <span class="visually-hidden">facebook</span></a>
           </li>
-          <li class="social-list__item">
+          <li class="main-navigation__social-item">
             <a href="#">
               <span class="visually-hidden">vkontakte</span></a>
           </li>
-          <li class="social-list__item">
+          <li class="main-navigation__social-item">
             <a href="#">
               <span class="visually-hidden">instagram</span>
             </a>
@@ -102,8 +103,8 @@
               Азербайжан
             </li>
           </ul>
+          <button class="alphabet__button" type="button">Свернуть</button>
         </div>
-        <button class="" type="button">Свернуть</button>
       </div>
     </form>
     <section class="companion">
@@ -196,7 +197,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="companion__fieldset transport">
+        <fieldset class="companion__fieldset">
           <legend class="companion__fieldset-title">Транспорт</legend>
           <button class="companion__button" type="button">
             <span class="visually-hidden">Открыть список транспорта</span>
@@ -232,28 +233,28 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="companion__fieldset level">
+        <fieldset class="companion__fieldset">
           <legend class="companion__fieldset-title">Левел</legend>
           <button class="companion__button" type="button">
             <span class="visually-hidden">Открыть фильтр левелов</span>
           </button>
-          <div class="level__wrapper">
-            <label class="level__label">
-              <input class="level__input" type="number" value="30" name="min-level"> -
+          <div class="companion__level-wrapper">
+            <label class="companion__level-label">
+              <input class="companion__level-input" type="number" value="30" name="min-level"> -
             </label>
-            <label class="level__label">
-              <input class="level__input" type="number" value="100" name="max-level">
+            <label class="companion__level-label">
+              <input class="companion__level-input" type="number" value="100" name="max-level">
             </label>
           </div>
-          <div class="level__range-scale">
-            <div class="level__range-bar">
-              <button class="level__range-button" type="button">
-                <span class="level__range-mini">
+          <div class="companion__level-range__scale">
+            <div class="companion__level-range__bar">
+              <button class="companion__level-range__button" type="button">
+                <span class="companion__level-range__mini">
                   <span class="visually-hidden">Изменить минимальный левел.</span>
                 </span>
               </button>
-              <button class="level__range-button" type="button">
-                <span class="level__range-mini">
+              <button class="companion__level-range__button" type="button">
+                <span class="companion__level-range__mini">
                   <span class="visually-hidden">Изменить максимальный левел</span>
                 </span>
               </button>
@@ -335,6 +336,7 @@
               </div>
             </div>
           </div>
+          <button class="people__button" type="button">Позвать!</button>
         </li>
       </ul>
       <a class="people__show-more" href="#">Показать еще</a>
@@ -361,13 +363,19 @@
     <div class="page-footer__social-wrapper">
       <ul class="page-footer__social-list">
         <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="#"></a>
+          <a class="page-footer__social-link" href="#">
+            <span class="visually-hidden">facebook</span>
+          </a>
         </li>
         <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="#"></a>
+          <a class="page-footer__social-link" href="#">
+            <span class="visually-hidden">vkontakte</span>
+          </a>
         </li>
         <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="#"></a>
+          <a class="page-footer__social-link" href="#">
+            <span class="visually-hidden">instagram</span>
+          </a>
         </li>
       </ul>
     </div>

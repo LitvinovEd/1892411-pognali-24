@@ -1,0 +1,22 @@
+body {
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  background-color: $main-color;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  color: $white-color;
+}
+
+/*.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}*/

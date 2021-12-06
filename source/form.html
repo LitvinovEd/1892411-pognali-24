@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body class="page-body">
@@ -16,42 +18,42 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-navigation__wrapper">
-        <ul class="main-navigation__list site-list">
-          <li class="site-list__item">
-            <a href="#">О сервисе</a>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="index.html">О сервисе</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">Направления</a>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="form.html">Направления</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">Попутчики</a>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="catalog.html">Попутчики</a>
           </li>
         </ul>
-        <div class="main-navigation__login user-list">
-          <a class="user-list__login" href="#">
+        <div class="main-navigation__login">
+          <a class="main-navigation__login-item" href="#">
             Авторизоватся
           </a>
         </div>
-        <div class="main-navigation__contacts contacts">
-          <ul class="contacts-list">
-            <li class="contacts-list__item">
-              <a class="contacts-list__item-phone" href="tel:+88005558628">8 800 555-86-28</a>
+        <div class="main-navigation__contacts">
+          <ul class="main-navigation__contacts-list">
+            <li class="main-navigation__contacts-item">
+              <a class="main-navigation__phone" href="tel:+88005558628">8 800 555-86-28</a>
             </li>
-            <li class="contacts-item">
-              <a class="contacts-list__item-mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <li class="main-navigation__contacts-item">
+              <a class="main-navigation__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
           </ul>
         </div>
-        <ul class="main-navigation__social-list social-list">
-          <li class="social-list__item">
+        <ul class="main-navigation__social-list">
+          <li class="main-navigation__social-item">
             <a href="#">
               <span class="visually-hidden">facebook</span></a>
           </li>
-          <li class="social-list__item">
+          <li class="main-navigation__social-item">
             <a href="#">
               <span class="visually-hidden">vkontakte</span></a>
           </li>
-          <li class="social-list__item">
+          <li class="main-navigation__social-item">
             <a href="#">
               <span class="visually-hidden">instagram</span>
             </a>
@@ -71,6 +73,7 @@
           <span class="profile__level-caption">level</span>
         </div>
         <img src="" alt="Фото Профиля" width="" height="">
+        <button class="profile__change-photo" type="button">Сменить Фото</button>
       </div>
       <div class="profile__tags">
         <h3 class="profile__title">ТЭГИ</h3>
@@ -119,7 +122,7 @@
         </div>
         <p class="my-plans__companion">3 попутчика</p>
         <p class="my-plans__date">26 мар — 29 мар</p>
-        <a class="my-plans__change" href="#"></a>
+        <a class="my-plans__change" href="#">Изменить</a>
       </div>
       <div class="my-plans__wrapper">
         <div class="my-plans__travel">
@@ -128,7 +131,7 @@
         </div>
         <p class="my-plans__companion">1 попутчик</p>
         <p class="my-plans__date">1 июл — 15 июл</p>
-        <a class="my-plans__change" href="#"></a>
+        <a class="my-plans__change" href="#">Изменить</a>
       </div>
     </section>
     <section class="add-plan">
@@ -152,7 +155,7 @@
           <p class="add-plan__step-description">Укажите предпочтительное количество попутчиков, которых вы хотели бы
             позвать в поездку, и ее предполагаемую длительность.</p>
           <div class="step-one__wrapper">
-            <h3 class="step-one__subtitle">ищу попутчиков:</h3>
+            <h3 class="step-one__subtitle">Ищу попутчиков:</h3>
             <span class="step-one__designation">чел.</span>
             <div class="step-one__wrapper-input">
               <button class="step-one__smaller" type="button" id="smaller"></button>
@@ -175,7 +178,7 @@
           </label>
           <div class="step-one__calendar-wrapper">
             <div class="step-one__month">
-              <button class="step-one__previous-slide" type="">
+              <button class="step-one__previous-slide" type="button">
                 <span class="visually-hidden">Предидущий слайд</span>
               </button>
               <h3 class="step-one__current-month">Март 2019</h3>
@@ -189,8 +192,8 @@
               <li class="step-one__item">С</li>
               <li class="step-one__item">Ч</li>
               <li class="step-one__item">П</li>
-              <li class="step-one__item">С</li>
-              <li class="step-one__item">В</li>
+              <li class="step-one__item step-one__item-holiday">С</li>
+              <li class="step-one__item step-one__item-holiday">В</li>
             </ul>
             <tr class="step-one__date-list">
               <td class="step-one__date-item">
@@ -324,7 +327,9 @@
               </td>
             </tr>
           </div>
-          <a class="step-one__next-step next-step" href="#">Следующий шаг</a>
+          <div class="step-one__next-step__wrapper">
+            <a class="step-one__next-step next-step" href="#">Следующий шаг</a>
+          </div>
         </div>
         <div class="add-plan__step step-two">
           <h2 class="add-plan__step-title">Шаг 2. Маршрут</h2>
@@ -409,12 +414,15 @@
               <span class="visually-hidden">Добавить страну</span>
             </button>
           </div>
-          <a class="step-two__next-step next-step" href="#">Следующий шаг</a>
-          <a class="step-two__back-step back-step" href="#">На шаг назад</a>
+          <div class="step-two__next-step__wrapper">
+            <a class="step-two__next-step" href="#">Следующий шаг</a>
+          </div>
+          <a class="step-two__back-step" href="#">На шаг назад</a>
         </div>
         <div class="add-plan__step step-three">
           <h2 class="add-plan__step-title">Шаг 3. Развлечения</h2>
-          <p class="add-plan__step-description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+          <p class="add-plan__step-description">Наконец, расскажите о своих планах времяпровождения. Можно писать в
+            свободной форме и ставить тэги.</p>
           <div class="step-three-wrapper">
             <h3 class="step-three__title">Босния и Герцеговина</h3>
             <img class="step-three__image" src="" alt="Флаг Боснии и Герцеговины" width="" height="">
@@ -426,16 +434,19 @@
             <textarea class="step-three__plan" id="plan" name="plan" placeholder="План действий"></textarea>
           </div>
           <div class="step-three-wrapper">
-            <h3 class="step-three-title">Чехия</h3>
+            <h3 class="step-three__title">Чехия</h3>
             <img class="step-three-image" src="" alt="Флаг Чехии" width="" height="">
           </div>
           <div class="">
             <label class="visually-hidden" for="plan">
               План действий
             </label>
-            <textarea class="step-three__plan" id="plan" name="plan" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+            <textarea class="step-three__plan" id="plan" name="plan"
+              placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
           </div>
+          <div class="step-three__next-step__wrapper">
           <a class="step-three__next-step next-step" href="#">Отправить</a>
+          </div>
           <a class="step-three__back-step back-step" href="#">На шаг назад</a>
         </div>
       </form>
@@ -450,13 +461,19 @@
     <div class="page-footer__social-wrapper">
       <ul class="page-footer__social-list">
         <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="#"></a>
+          <a class="page-footer__social-link" href="#">
+            <span class="visually-hidden">facebook</span>
+          </a>
         </li>
         <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="#"></a>
+          <a class="page-footer__social-link" href="#">
+            <span class="visually-hidden">vkontakte</span>
+          </a>
         </li>
         <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="#"></a>
+          <a class="page-footer__social-link" href="#">
+            <span class="visually-hidden">instagram</span>
+          </a>
         </li>
       </ul>
     </div>

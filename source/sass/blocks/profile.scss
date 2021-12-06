@@ -1,0 +1,65 @@
+/*.profile {
+
+}
+
+.profile__wrapper {
+
+}
+
+.profile__level {
+
+}*/
+
+.profile__level-numder {
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 38px;
+  text-align: center;
+  color: $auxiliary-color;
+}
+
+.profile__level-caption {
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: $dark-color;
+}
+
+.profile__change-photo {
+  background-color: $modal-color;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*.profile__tags {
+
+}*/
+
+.profile__title {
+  font-weight: bold;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $text-color;
+}
+
+/*.profile__list {
+
+}
+
+.profile__item {
+
+}*/
+
+.profile__hashtag {
+  line-height: 18px;
+  color: $dark-color;
+  opacity: 0.6;
+}
+
+/*.profile__transport {
+
+}*/

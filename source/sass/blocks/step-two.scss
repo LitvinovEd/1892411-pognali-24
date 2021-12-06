@@ -1,0 +1,53 @@
+/*.step-two {
+
+}
+
+.step-two__wrapper {
+
+}
+
+.step-two__country-selection {
+
+}*/
+
+.step-two__country {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $text-color;
+}
+
+/*.step-two__button {
+
+}
+
+.step-two__close-button {
+
+}
+
+.step-two__alphabet-wrapper {
+
+}*/
+
+.step-two__next-step__wrapper {
+  background-color: $light-color;
+}
+
+.step-two__next-step {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $text-color;
+}
+
+.step-two__back-step {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $text-color;
+  text-decoration: none;
+}

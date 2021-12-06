@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body class="page-body">
@@ -16,42 +18,44 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-navigation__wrapper">
-        <ul class="main-navigation__list site-list">
-          <li class="site-list__item">
-            <a href="#">О сервисе</a>
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="index.html">О сервисе</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">Направления</a>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="form.html">Направления</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">Попутчики</a>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="catalog.html">Попутчики</a>
           </li>
         </ul>
-        <div class="main-navigation__login user-list">
-          <a class="user-list__login" href="#">
+        <div class="main-navigation__login">
+          <a class="main-navigation__login-item" href="#">
             Авторизоватся
           </a>
         </div>
-        <div class="main-navigation__contacts contacts">
-          <ul class="contacts-list">
-            <li class="contacts-list__item">
-              <a class="contacts-list__item-phone" href="tel:+88005558628">8 800 555-86-28</a>
+        <div class="main-navigation__contacts">
+          <ul class="main-navigation__contacts-list">
+            <li class="main-navigation__contacts-item">
+              <a class="main-navigation__phone" href="tel:+88005558628">8 800 555-86-28</a>
             </li>
-            <li class="contacts-item">
-              <a class="contacts-list__item-mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <li class="main-navigation__contacts-item">
+              <a class="main-navigation__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
           </ul>
         </div>
-        <ul class="main-navigation__social-list social-list">
-          <li class="social-list__item">
+        <ul class="main-navigation__social-list">
+          <li class="main-navigation__social-item">
             <a href="#">
-              <span class="visually-hidden">facebook</span></a>
+              <span class="visually-hidden">facebook</span>
+            </a>
           </li>
-          <li class="social-list__item">
+          <li class="main-navigation__social-item">
             <a href="#">
-              <span class="visually-hidden">vkontakte</span></a>
+              <span class="visually-hidden">vkontakte</span>
+            </a>
           </li>
-          <li class="social-list__item">
+          <li class="main-navigation__social-item">
             <a href="#">
               <span class="visually-hidden">instagram</span>
             </a>
@@ -64,30 +68,30 @@
     <h1 class="visually-hidden">Сервис для путешествий 'Погнали'</h1>
     <section class="first-screen">
       <h2 class="first-screen__title">В путешествие с крутыми попутчиками!</h2>
-      <div class="first-screen__wrapper-quote quote">
+      <div class="first-screen__wrapper-quote">
         <p class="first-screen__quote-text">«Лучшее приложение, что я видел в жизни!»</p>
         <p class="first-screen__quote-copyright">Мурат Эльтазин главный редактор газеты «гаджетлайф»</p>
       </div>
       <ol class="first-screen__list">
-        <li class="first-screen__item-one">
+        <li class="first-screen__item first-screen__item-one">
           <h3 class="first-screen__item-description">
             Выберите направление
           </h3>
           <span class="first-screen__item-number">1</span>
         </li>
-        <li class="first-screen__item-two">
+        <li class="first-screen__item first-screen__item-two">
           <h3 class="first-screen__item-description">
             Изучите идеи путешественников
           </h3>
           <span class="first-screen__item-number">2</span>
         </li>
-        <li class="first-screen__item-three">
+        <li class="first-screen__item first-screen__item-three">
           <h3 class="first-screen__item-description">
             Находите тех, кто похож на вас
           </h3>
           <span class="first-screen__item-number">3</span>
         </li>
-        <li class="first-screen__item-four">
+        <li class="first-screen__item first-screen__item-four">
           <h3 class="first-screen__item-description">
             Путешествуйте вместе!
           </h3>
@@ -116,28 +120,28 @@
       </div>
       <div>
         <ul class="direction__list">
-          <li class="direction__item content">
-            <img class="content__image" src="" alt="Флаг Тайланда" width="" height="">
-            <h3 class="content__title">Таиланд</h3>
-            <p class="content__slogan">Джунгли зовут!</p>
-            <div class="content__wrapper">
-              <p class="content__amount">18321</p>
+          <li class="direction__item">
+            <img class="direction__item-image" src="" alt="Флаг Тайланда" width="" height="">
+            <h3 class="direction__item-title">Таиланд</h3>
+            <p class="direction__item-slogan">Джунгли зовут!</p>
+            <div class="direction__item-wrapper">
+              <p class="direction__item-amount">18321</p>
             </div>
           </li>
-          <li class="direction__item content">
-            <img class="content__image" src="" alt="Флаг Франции" width="" height="">
-            <h3 class="content__title">Франция</h3>
-            <p class="content__slogan">Трэ бьен, манифик!</p>
-            <div class="content__wrapper">
-              <p class="content__amount">12518</p>
+          <li class="direction__item">
+            <img class="direction__item-image" src="" alt="Флаг Франции" width="" height="">
+            <h3 class="direction__item-title">Франция</h3>
+            <p class="direction__item-slogan">Трэ бьен, манифик!</p>
+            <div class="direction__item-wrapper">
+              <p class="direction__item-amount">12518</p>
             </div>
           </li>
-          <li class="direction__item content">
-            <img class="content__image" src="" alt="Флаг Чехии" width="" height="">
-            <h3 class="content__title">Чехия</h3>
-            <p class="content__slogan">Закоулки старой Европы</p>
-            <div class="content__wrapper">
-              <p class="content__amount">5326</p>
+          <li class="direction__item">
+            <img class="direction__item-image" src="" alt="Флаг Чехии" width="" height="">
+            <h3 class="direction__item-title">Чехия</h3>
+            <p class="direction__item-slogan">Закоулки старой Европы</p>
+            <div class="direction__item-wrapper">
+              <p class="direction__item-amount">5326</p>
             </div>
           </li>
         </ul>
@@ -256,12 +260,12 @@
           <a class="interesting__login" href="#">авторизуйтесь.</a>
         </p>
       </div>
-      <form class="interesting__form mailing" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="mailing__wrapper">
+      <form class="interesting__form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="interesting__mailing-wrapper">
           <label class="visually-hidden" for="subscription-email">Подпишитесь на рассылку</label>
-          <input class="mailing__field" placeholder="E-mail" type="email" name="subscription-email"
+          <input class="interesting__mailing-field" placeholder="E-mail" type="email" name="subscription-email"
             id="subscription-email">
-          <button class="mailing__button" type="submit"></button>
+          <button class="interesting__mailing-button" type="submit"></button>
         </div>
       </form>
       <p class="interesting__questions">Остались вопросы? Мы с радостью на них ответим!</p>
@@ -296,13 +300,19 @@
     <div class="page-footer__social-wrapper">
       <ul class="page-footer__social-list">
         <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="#"></a>
+          <a class="page-footer__social-link" href="#">
+            <span class="visually-hidden">facebook</span>
+          </a>
         </li>
         <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="#"></a>
+          <a class="page-footer__social-link" href="#">
+            <span class="visually-hidden">vkontakte</span>
+          </a>
         </li>
         <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="#"></a>
+          <a class="page-footer__social-link" href="#">
+            <span class="visually-hidden">instagram</span>
+          </a>
         </li>
       </ul>
     </div>

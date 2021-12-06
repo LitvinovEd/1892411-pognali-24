@@ -1,0 +1,22 @@
+/*.business {
+
+}*/
+
+.business__title {
+  color: $secondary-color;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.business__price {
+  color: $dark-color;
+  font-weight: 300;
+}
+
+.business__close-button {
+  color: $text-color;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 24px;
+}

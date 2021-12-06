@@ -1,0 +1,52 @@
+.traveler {
+  background-color: $white-color;
+}
+
+.traveler__wrapper {
+  background-color: $blak-color;
+  opacity: 0.6;
+}
+
+.traveler__level {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.traveler__text {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+/*.traveler__photo {
+
+}
+
+.traveler__wrapper-country {
+
+}
+
+.traveler__country {
+
+}*/
+
+.traveler__name {
+  color: $text-color;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+/*.traveler__list {
+
+}
+
+.traveler__item {
+
+}*/
+
+.traveler__hashtag {
+  color: $dark-color;
+  font-size: 16px;
+  line-height: 18px;
+}

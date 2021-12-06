@@ -2,9 +2,9 @@
   background-color: $plan-color;
 }
 
-.add-plan__wrapper {
+/*.add-plan__wrapper {
 
-}
+}*/
 
 .add-plan__title {
   font-weight: bold;
@@ -13,20 +13,20 @@
   color: $text-color;
 }
 
-.add-plan__slider-list {
+/*.add-plan__slider-list {
 
-}
+}*/
 
-.add-plan__form {
+/*.add-plan__form {
 
-}
+}*/
 
 .add-plan__step {
   background-color: $white-color;
 }
 
 .add-plan__step-description {
-
+  color: $dark-color;
 }
 
 .add-plan__step-title {
@@ -34,8 +34,4 @@
   font-size: 20px;
   line-height: 20px;
   color: $text-color;
-}
-
-.add-plan__step-description {
-  color: $dark-color;
 }

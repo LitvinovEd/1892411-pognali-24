@@ -1,5 +1,9 @@
 .route {
   background-color: $light-color;
+  padding-top: 65px;
+  padding-bottom: 35px;
+  display: flex;
+  flex-direction: column;
 }
 
 /*.route__wrapper-address {

@@ -2,15 +2,20 @@ body {
   font-family: "Blogger Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
+  min-height: 100%;
   background-color: $main-color;
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 0;
   color: $white-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+  }
 }
 
-/*.visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -19,4 +24,4 @@ body {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}*/
+}

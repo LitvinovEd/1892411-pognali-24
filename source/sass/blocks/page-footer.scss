@@ -1,8 +1,13 @@
-/*.page-footer {
-
+.page-footer {
+  background-color: $white-color;
+  padding-top: 37px;
+  padding-bottom: 27px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.page-footer__wrapper-logo {
+/*.page-footer__wrapper-logo {
 
 }
 
@@ -28,11 +33,11 @@
 
 .page-footer__delimiter {
 
-}
+}*/
 
 .page-footer__developers {
-
-}*/
+  flex-direction: row;
+}
 
 .page-footer__text {
   line-height: 16px;

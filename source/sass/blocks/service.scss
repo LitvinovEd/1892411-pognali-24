@@ -1,26 +1,77 @@
 .service {
+  padding-top: 39px;
+  padding-bottom: 82px;
   background-color: $text-secondary-color;
 }
 
-/*.service__wrapper {
+.service__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-}*/
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+    padding-left: 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-start;
+    padding-left: 130px;
+  }
+}
 
 .service__title {
   color: $secondary-color;
   font-weight: bold;
   font-size: 24px;
   line-height: 24px;
+  padding-bottom: 19px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+    line-height: 45px;
+    padding-bottom: 40px;
+  }
 }
 
 .service__description {
   font-weight: 300;
+  padding-bottom: 20px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 308px;
+    padding-bottom: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 619px;
+    padding-bottom: 38px;
+  }
 }
 
 .service__slogan {
   font-weight: bold;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 265px;
+    padding-bottom: 52px;
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 425px;
+    padding-bottom: 85px;
+  }
 }
 
-/*.service__button {
+.service__button {
+  display: block;
 
-}*/
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}

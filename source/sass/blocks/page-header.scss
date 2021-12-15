@@ -1,7 +1,40 @@
-/*.page-header {
+.page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: $header-color;
+  padding-top: 25px;
+  padding-bottom: 60px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: start;
+    padding-top: 47px;
+    padding-bottom: 10px;
+  }
+}
+
+
+.page-header__toggle {
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .page-header__logo {
+  padding-left: 26px;
 
-}*/
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 60px;
+  }
+}

@@ -13,10 +13,10 @@
     <a class="page-header__logo" href="index.html">
       <img src="img/logo_mobile_white.svg" width="96" height="15" alt="Логотип 'Погнали'">
     </a>
+    <button class="page-header__toggle" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
     <nav class="main-navigation">
-      <button class="main-navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
       <div class="main-navigation__wrapper">
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
@@ -37,7 +37,7 @@
         <div class="main-navigation__contacts">
           <ul class="main-navigation__contacts-list">
             <li class="main-navigation__contacts-item">
-              <a class="main-navigation__phone" href="tel:+88005558628">8 800 555-86-28</a>
+              <a class="main-navigation__phone" href="tel:88005558628">8 800 555-86-28</a>
             </li>
             <li class="main-navigation__contacts-item">
               <a class="main-navigation__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
@@ -67,33 +67,52 @@
   <main class="page-main">
     <h1 class="visually-hidden">Сервис для путешествий 'Погнали'</h1>
     <section class="first-screen">
-      <h2 class="first-screen__title">В путешествие с крутыми попутчиками!</h2>
-      <div class="first-screen__wrapper-quote">
-        <p class="first-screen__quote-text">«Лучшее приложение, что я видел в жизни!»</p>
-        <p class="first-screen__quote-copyright">Мурат Эльтазин главный редактор газеты «гаджетлайф»</p>
+      <div class="first-screen__wrapper">
+        <h2 class="first-screen__title">В путешествие с крутыми попутчиками!</h2>
+        <div class="first-screen__contacts">
+          <ul class="first-screen__contacts-list">
+            <li class="first-screen__contacts-item">
+              <a class="first-screen__phone" href="tel:88005558628">
+                <span class="visually-hidden">Позвонить по телефу</span>
+              </a>
+            </li>
+            <li class="first-screen__contacts-item">
+              <a class="first-screen__mail" href="mailto:mail@htmlacademy.ru">
+                <span class="visually-hidden">Написать на почту</span>
+              </a>
+            </li>
+            <li class="first-screen__contacts-item">
+              <a class="first-screen__login" href="#">Авторизоватся</a>
+            </li>
+          </ul>
+        </div>
+        <div class="first-screen__wrapper-quote">
+          <p class="first-screen__quote-text">«Лучшее приложение, что я видел в жизни!»</p>
+          <p class="first-screen__quote-copyright">Мурат Эльтазин главный редактор газеты «гаджетлайф»</p>
+        </div>
       </div>
       <ol class="first-screen__list">
         <li class="first-screen__item first-screen__item-one">
           <h3 class="first-screen__item-description">
-            Выберите направление
+            Выберите<br>направление
           </h3>
           <span class="first-screen__item-number">1</span>
         </li>
         <li class="first-screen__item first-screen__item-two">
           <h3 class="first-screen__item-description">
-            Изучите идеи путешественников
+            Изучите идеи<br>путешественников
           </h3>
           <span class="first-screen__item-number">2</span>
         </li>
         <li class="first-screen__item first-screen__item-three">
           <h3 class="first-screen__item-description">
-            Находите тех, кто похож на вас
+            Находите тех,<br>кто похож на вас
           </h3>
           <span class="first-screen__item-number">3</span>
         </li>
         <li class="first-screen__item first-screen__item-four">
           <h3 class="first-screen__item-description">
-            Путешествуйте вместе!
+            Путешествуйте<br>вместе!
           </h3>
           <span class="first-screen__item-number">4</span>
         </li>
@@ -112,13 +131,14 @@
       </div>
     </section>
     <section class="direction">
-      <div class="direction__wrapper">
-        <h2 class="direction__title">Направления</h2>
-        <p class="direction__description">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда
-          хотели бы отправиться и
-          чем можно там заняться.</p>
-      </div>
-      <div>
+      <div class="direction__order">
+        <div class="direction__wrapper">
+          <h2 class="direction__title">Направления</h2>
+          <p class="direction__description">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда
+            хотели бы отправиться и
+            чем можно там заняться.</p>
+          <button class="direction__button" type="button">Показать все</button>
+        </div>
         <ul class="direction__list">
           <li class="direction__item">
             <img class="direction__item-image" src="" alt="Флаг Тайланда" width="" height="">
@@ -145,7 +165,6 @@
             </div>
           </li>
         </ul>
-        <button class="direction__button" type="button">Показать все</button>
       </div>
     </section>
     <section class="travelers">
@@ -227,17 +246,17 @@
       <h3 class="visually-hidden">Тарифы</h3>
       <ul class="services__list">
         <li class="services__item">
-          <samp class="services__number">1</samp>
+          <span class="services__number">1</span>
           <p class="services__service">Базовое размещение</p>
           <span class="services__price">Бесплатно</span>
         </li>
         <li class="services__item">
-          <samp class="services__number">2</samp>
+          <span class="services__number">2</span>
           <p class="services__service">Вывод на первых позициях</p>
           <span class="services__price">99 руб./мес</span>
         </li>
         <li class="services__item">
-          <samp class="services__number">3</samp>
+          <span class="services__number">3</span>
           <p class="services__service">Кастомный цвет карточки</p>
           <span class="services__price">59 руб./мес</span>
         </li>
@@ -271,7 +290,7 @@
       <p class="interesting__questions">Остались вопросы? Мы с радостью на них ответим!</p>
       <ul class="interesting__list">
         <li class="interesting__item">
-          <a class="interesting__phone" href="tel:+88005558628">8 800 555-86-28</a>
+          <a class="interesting__phone" href="tel:88005558628">8 800 555-86-28</a>
         </li>
         <li class="interesting__item">
           <a class="interesting__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
@@ -319,7 +338,9 @@
     <hr class="page-footer__delimiter">
     <div class="page-footer__developers">
       <span class="page-footer__text">Разработано</span>
-      <a class="page-footer__link" href="#"></a>
+      <a class="page-footer__link" href="#">
+        <span class="visually-hidden">Логотип HTML Академии</span>
+      </a>
     </div>
   </footer>
 </body>

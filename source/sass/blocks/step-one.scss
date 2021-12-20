@@ -1,15 +1,44 @@
 /*.step-one {
-}
+}*/
 
 .step-one__wrapper {
+  margin: 0;
 
-}*/
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+
+  }
+}
+
+.step-one__wrapper-order {
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
 
 .step-one__subtitle {
   font-weight: 500;
   line-height: 16px;
   text-transform: uppercase;
   color: $text-color;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+  }
 }
 
 .step-one__designation {
@@ -18,13 +47,32 @@
   text-transform: uppercase;
   color: $text-color;
   opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 18px;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 3;
+  }
 }
 
-/*.step-one__wrapper-input {
+.step-one__wrapper-input {
+  margin: 0;
 
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+  }
 }
 
-.step-one__smaller {
+/*.step-one__smaller {
 
 }
 
@@ -38,27 +86,35 @@
 
 .step-one__checkbox {
 
-}
+}*/
 
 .step-one__children {
-
-}*/
+  margin: 0;
+}
 
 .step-one__text {
   font-size: 15px;
   line-height: 15px;
   color: $text-color;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 /*.step-one__calendar-wrapper {
 
-}
+}*/
+
 
 .step-one__month {
-
+  display: flex;
+  justify-content: space-between;
 }
 
-.step-one__previous-slide {
+/*.step-one__previous-slide {
 
 }*/
 
@@ -71,35 +127,46 @@
 
 /*.step-one__next-slide {
 
-}
+}*/
 
 .step-one__list {
-
-}*/
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
 
 .step-one__item {
   font-size: 14px;
   line-height: 18px;
   color: $dark-color;
+  margin-left: 11.5px;
+  margin-right: 11.5px;
 }
 
 .step-one__item-holiday {
   color: $holiday-color;
 }
 
-/*.step-one__date-list {
-
+.step-one__date-list {
+  display: grid;
+  padding: 0;
+  grid-template-columns: 31px 31px 31px 31px 31px 31px 31px;
+  list-style-type: none;
 }
 
 .step-one__date-item {
-
-}*/
+  width: 31px;
+  height: 31px;
+}
 
 .step-one__date {
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   color: $text-color;
+  width: 31px;
+  height: 31px;
 }
 
 .step-one__next-step__wrapper {

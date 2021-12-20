@@ -1,5 +1,7 @@
 .my-plans {
   background-color: $modal-color;
+  margin-top: 34px;
+  padding-bottom: 59px;
 }
 
 .my-plans__title {
@@ -7,27 +9,82 @@
   font-size: 24px;
   line-height: 24px;
   color: $text-color;
+  padding-left: 25px;
+  padding-top: 28px;
+
+  @media (min-width: $tablet-width) {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .my-plans__wrapper {
   background-color: $white-color;
   border-radius: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  padding-left: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    padding-right: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-/*.my-plans__travel {
+.my-plans__travel {
+  display: flex;
+  align-items: center;
 
-}*/
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
+}
+
+.my-plans__wrapper-plan {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
 .my-plans__number {
   font-weight: 500;
+  font-size: 16px;
   line-height: 16px;
   color: $text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 0;
+  }
 }
 
 .my-plans__country {
   font-weight: bold;
+  font-size: 16px;
   line-height: 16px;
   color: $text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .my-plans__companion {
@@ -36,6 +93,12 @@
   line-height: 14px;
   text-transform: uppercase;
   color: $text-color;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .my-plans__date {
@@ -43,6 +106,16 @@
   line-height: 14px;
   text-transform: uppercase;
   color: $text-color;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 120px;
+  }
 }
 
 .my-plans__change {
@@ -53,4 +126,10 @@
   color: $blak-color;
   opacity: 0.3;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

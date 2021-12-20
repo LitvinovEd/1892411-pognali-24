@@ -1,6 +1,14 @@
 .companion {
   background-color: $light-color;
   border-radius: 20px;
+  margin: 25px;
+  padding: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin: 40px;
+    padding: 35px;
+  }
+
 }
 
 /*.companion__form {
@@ -11,6 +19,8 @@
   color: $text-color;
   font-weight: bold;
   font-size: 22px;
+  margin: 0;
+  padding-bottom: 35px;
 }
 
 /*.companion__fieldset {
@@ -30,11 +40,11 @@
 
 .companion__list {
 
-}
+}*/
 
 .companion__item {
-
-}*/
+  list-style-type: none;
+}
 
 .companion__control {
   font-size: 15px;

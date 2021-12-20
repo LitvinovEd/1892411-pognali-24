@@ -3,6 +3,19 @@
 }
 
 .filter-country__title {
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  padding-left: 25px;
+  padding-bottom: 11px;
+  background-color: $header-color;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 88px;
+  }
+}
+
+.filter-country__subtitle {
   color: $text-secondary-color;
   font-weight: bold;
   font-size: 16px;
@@ -10,15 +23,22 @@
   text-transform: uppercase;
 }
 
+.filter-country__wrapper-filter {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 /*.filter-country__button {
 
-}
+}*/
 
 .filter-country__wrapper {
-
+  display: none;
 }
 
-.filter-country__list {
+/*.filter-country__list {
 
 }*/
 

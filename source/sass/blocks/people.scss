@@ -1,13 +1,24 @@
 /*.people {
 
-}
+}*/
 
 .people__list {
+  padding: 25px;
 
-}*/
+  @media (min-width: $tablet-width) {
+    padding: 40px;
+  }
+}
 
 .people__item {
   background-color: $white-color;
+  list-style-type: none;
+  border-radius: 30px;
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 35px;
+  }
 }
 
 /*.people__name__wrapper {
@@ -109,13 +120,18 @@
   line-height: 30px;
   text-transform: uppercase;
   color: $text-color;
+  display: flex;
+  justify-content: center;
 }
 
-/*.people__pages-list {
-
+.people__pages-list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
-.people__pages-item {
+/*.people__pages-item {
 
 }
 

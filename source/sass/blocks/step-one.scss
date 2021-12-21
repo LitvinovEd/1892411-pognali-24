@@ -12,7 +12,6 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-
   }
 }
 
@@ -140,8 +139,8 @@
   font-size: 14px;
   line-height: 18px;
   color: $dark-color;
-  margin-left: 11.5px;
-  margin-right: 11.5px;
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
 .step-one__item-holiday {
@@ -151,7 +150,7 @@
 .step-one__date-list {
   display: grid;
   padding: 0;
-  grid-template-columns: 31px 31px 31px 31px 31px 31px 31px;
+  grid-template-columns: repeat(7, 31px);
   list-style-type: none;
 }
 

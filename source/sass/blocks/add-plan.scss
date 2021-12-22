@@ -2,31 +2,87 @@
   background-color: $plan-color;
 }
 
-/*.add-plan__wrapper {
+.add-plan__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 29px;
 
-}*/
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
+}
 
 .add-plan__title {
   font-weight: bold;
   font-size: 24px;
   line-height: 24px;
   color: $text-color;
+  margin: 0;
+  padding-top: 30px;
+  padding-left: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 53px;
+    padding-left: 74px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
-/*.add-plan__slider-list {
+.add-plan__slider-list {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding-top: 30px;
+  list-style-type: none;
 
-}*/
+  @media (min-width: $tablet-width) {
+    padding-top: 66px;
+    padding-right: 73px;
+    padding-left: 0;
+  }
+}
 
-/*.add-plan__form {
+.add-plan__form {
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-bottom: 43px;
 
-}*/
+  @media (min-width: $tablet-width) {
+    margin-left: 75px;
+    margin-right: 75px;
+  }
+}
 
 .add-plan__step {
   background-color: $white-color;
+  padding: 25px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 48px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 101px;
+    padding-bottom: 106px;
+  }
 }
 
 .add-plan__step-description {
   color: $dark-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .add-plan__step-title {
@@ -34,4 +90,9 @@
   font-size: 20px;
   line-height: 20px;
   color: $text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }

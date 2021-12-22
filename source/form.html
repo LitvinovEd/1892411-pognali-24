@@ -63,20 +63,18 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="page-main__title">Направления</h1>
     <section class="profile">
+      <h1 class="profile__title">Направления</h1>
       <h2 class="visually-hidden">Профиль</h2>
-      <div class="profile__wrapper">
-        <h3 class="visually-hidden">Фото профиля</h3>
-        <div class="profile__level">
-          <span class="profile__level-numder">80</span>
-          <span class="profile__level-caption">level</span>
-        </div>
-        <img src="" alt="Фото Профиля" width="" height="">
-        <button class="profile__change-photo" type="button">Сменить Фото</button>
+      <h3 class="visually-hidden">Фото профиля</h3>
+      <div class="profile__level">
+        <span class="profile__level-numder">80</span>
+        <span class="profile__level-caption">level</span>
       </div>
+      <img class="profile__image" src="" alt="Фото Профиля" width="" height="">
+      <button class="profile__change-photo" type="button">Сменить Фото</button>
       <div class="profile__tags">
-        <h3 class="profile__title">ТЭГИ</h3>
+        <h3 class="profile__subtitle">ТЭГИ</h3>
         <ul class="profile__list">
           <li class="profile__item">
             <span class="profile__hashtag">#бургер</span>
@@ -95,8 +93,8 @@
           </li>
         </ul>
       </div>
-      <div class="profile__wrapper">
-        <h3 class="profile__title">Транспорт</h3>
+      <div class="profile__tags-transport">
+        <h3 class="profile__subtitle">Транспорт</h3>
         <ul class="profile__list">
           <li class="profile__item">
             <span class="profile__transport"></span>
@@ -120,18 +118,22 @@
           <samp class="my-plans__number">1.</samp>
           <h3 class="my-plans__country">Франция, Италия</h3>
         </div>
-        <p class="my-plans__companion">3 попутчика</p>
-        <p class="my-plans__date">26 мар — 29 мар</p>
-        <a class="my-plans__change" href="#">Изменить</a>
+        <div class="my-plans__wrapper-plan">
+          <p class="my-plans__companion">3 попутчика</p>
+          <p class="my-plans__date">26 мар — 29 мар</p>
+          <a class="my-plans__change" href="#">Изменить</a>
+        </div>
       </div>
       <div class="my-plans__wrapper">
         <div class="my-plans__travel">
           <samp class="my-plans__number">2.</samp>
           <h3 class="my-plans__country">Таиланд, Индонезия</h3>
         </div>
-        <p class="my-plans__companion">1 попутчик</p>
-        <p class="my-plans__date">1 июл — 15 июл</p>
-        <a class="my-plans__change" href="#">Изменить</a>
+        <div class="my-plans__wrapper-plan">
+          <p class="my-plans__companion">1 попутчик</p>
+          <p class="my-plans__date">1 июл — 15 июл</p>
+          <a class="my-plans__change" href="#">Изменить</a>
+        </div>
       </div>
     </section>
     <section class="add-plan">
@@ -154,28 +156,30 @@
           <h2 class="add-plan__step-title">Шаг 1. Даты пребывания</h2>
           <p class="add-plan__step-description">Укажите предпочтительное количество попутчиков, которых вы хотели бы
             позвать в поездку, и ее предполагаемую длительность.</p>
-          <div class="step-one__wrapper">
-            <h3 class="step-one__subtitle">Ищу попутчиков:</h3>
-            <span class="step-one__designation">чел.</span>
-            <div class="step-one__wrapper-input">
-              <button class="step-one__smaller" type="button" id="smaller"></button>
-              <input class="step-one__number" type="number" value="2">
-              <button class="step-one__more" type="button" id="more"></button>
+          <div class="step-one__wrapper-order">
+            <div class="step-one__wrapper">
+              <h3 class="step-one__subtitle">Ищу попутчиков:</h3>
+              <span class="step-one__designation">чел.</span>
+              <div class="step-one__wrapper-input">
+                <button class="step-one__smaller" type="button" id="smaller"></button>
+                <input class="step-one__number" type="number" value="2">
+                <button class="step-one__more" type="button" id="more"></button>
+              </div>
             </div>
-          </div>
-          <div class="step-one__wrapper">
-            <h3 class="step-one__subtitle">длительность:</h3>
-            <span class="step-one__designation">дн.</span>
-            <label class="step-one__wrapper-input">
-              <button class="step-one__smaller" type="button" id="smaller"></button>
-              <input class="step-one__number" type="number" value="3">
-              <button class="step-one__more" type="button" id="more"></button>
+            <div class="step-one__wrapper">
+              <h3 class="step-one__subtitle">длительность:</h3>
+              <span class="step-one__designation">дн.</span>
+              <label class="step-one__wrapper-input">
+                <button class="step-one__smaller" type="button" id="smaller"></button>
+                <input class="step-one__number" type="number" value="3">
+                <button class="step-one__more" type="button" id="more"></button>
+              </label>
+            </div>
+            <label class="step-one__checkbox" for="">
+              <input class="step-one__children" type="checkbox">
+              <span class="step-one__text">Можно с детьми</span>
             </label>
           </div>
-          <label class="step-one__checkbox" for="">
-            <input class="step-one__children" type="checkbox">
-            <span class="step-one__text">Можно с детьми</span>
-          </label>
           <div class="step-one__calendar-wrapper">
             <div class="step-one__month">
               <button class="step-one__previous-slide" type="button">
@@ -195,137 +199,134 @@
               <li class="step-one__item step-one__item-holiday">С</li>
               <li class="step-one__item step-one__item-holiday">В</li>
             </ul>
-            <tr class="step-one__date-list">
-              <td class="step-one__date-item">
+            <ul class="step-one__date-list">
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button" disabled>23</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button" disabled>24</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button" disabled>25</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button" disabled>26</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button" disabled>27</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button" disabled>28</button>
-              </td>
-              <td class="step-one__date-item">
-                <button class="step-one__date" type="button" disabled>29</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button" disabled>1</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button" disabled>2</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button" disabled>3</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button" disabled>4</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button" disabled>5</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button" disabled>6</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button" disabled>7</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button" disabled>8</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button" disabled>9</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button" disabled>10</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button" disabled>11</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button" disabled>12</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button" disabled>13</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button" disabled>14</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button" disabled>15</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button" disabled>16</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button" disabled>17</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button" disabled>18</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button" disabled>19</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button" disabled>20</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button" disabled>21</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button" disabled>22</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button" disabled>23</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button" disabled>24</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button" disabled>25</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button">26</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button">27</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button">28</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button">29</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button">30</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button">31</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button">1</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button">2</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button">3</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button">4</button>
-              </td>
-              <td class="step-one__date-item">
+              </li>
+              <li class="step-one__date-item">
                 <button class="step-one__date" type="button">5</button>
-              </td>
-            </tr>
+              </li>
+            </ul>
           </div>
           <div class="step-one__next-step__wrapper">
             <a class="step-one__next-step next-step" href="#">Следующий шаг</a>
@@ -377,23 +378,23 @@
                 <button class="alphabet__close-button" type="button">
                   <span class="visually-hidden">Закрыть выбор страны</span>
                 </button>
-                <tr class="alphabet__list">
-                  <td class="alphabet__item">
+                <ul class="alphabet__list">
+                  <li class="alphabet__item">
                     <a class="alphabet__link" href="#">А</a>
-                  </td>
-                  <td class="alphabet__item">
+                  </li>
+                  <li class="alphabet__item">
                     <a class="alphabet__link" href="#">Б</a>
-                  </td>
-                  <td class="alphabet__item">
+                  </li>
+                  <li class="alphabet__item">
                     <a class="alphabet__link" href="#">В</a>
-                  </td>
-                  <td class="alphabet__item">
+                  </li>
+                  <li class="alphabet__item">
                     <a class="alphabet__link" href="#">Г</a>
-                  </td>
-                  <td class="alphabet__item">
+                  </li>
+                  <li class="alphabet__item">
                     <a class="alphabet__link" href="#">Д</a>
-                  </td>
-                </tr>
+                  </li>
+                </ul>
                 <ul class="alphabet__countries-list">
                   <li class="alphabet__countries-item">
                     Австалия
@@ -445,7 +446,7 @@
               placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
           </div>
           <div class="step-three__next-step__wrapper">
-          <a class="step-three__next-step next-step" href="#">Отправить</a>
+            <a class="step-three__next-step next-step" href="#">Отправить</a>
           </div>
           <a class="step-three__back-step back-step" href="#">На шаг назад</a>
         </div>

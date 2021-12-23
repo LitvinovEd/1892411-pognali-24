@@ -1,9 +1,9 @@
 .page-header {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  background-color: $header-color;
-  padding-top: 25px;
+  background-color: $auxiliary-color;
+  padding-top: 19px;
   padding-bottom: 60px;
 
   @media (min-width: $tablet-width) {
@@ -12,18 +12,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    flex-direction: row;
     justify-content: start;
-    align-items: center;
-    padding-top: 75px;
-  }
-}
-
-
-.page-header__toggle {
-  margin: 0;
-
-  @media (min-width: $desktop-width) {
-    display: none;
+    align-items: flex-start;
+    padding-top: 47px;
+    padding-bottom: 10px;
   }
 }
 

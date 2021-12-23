@@ -13,6 +13,10 @@
   margin: auto;
   text-align: center;
   margin-bottom: 245px;
+  padding-left: 41px;
+  padding-right: 41px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $tablet-width) {
     width: 399px;
@@ -54,22 +58,35 @@
 }
 
 .first-screen__contacts-list {
+  display: flex;
+  flex-direction: row;
   list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .first-screen__contacts-item {
-  list-style-type: none;
+  margin: 0;
 }
 
 .first-screen__phone {
   background-color: $secondary-color;
-  padding: 12px;
-  list-style-type: none;
+  padding-left: 10px;
+  padding-right: 11px;
+  padding-top: 13px;
+  padding-bottom: 8px;
+  border-radius: 50%;
 }
 
 .first-screen__mail {
   background-color: $special-color;
-  padding: 12px;
+  padding-left: 10px;
+  padding-right: 11px;
+  padding-top: 13px;
+  padding-bottom: 8px;
+  border-radius: 50%;
 }
 
 .first-screen__login {
@@ -77,14 +94,24 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
   color: $text-secondary-color;
+  padding-left: 39px;
+  padding-right: 39px;
+  padding-top: 12px;
+  padding-bottom: 8px;
+  border-radius: 25px;
 }
 
 
 .first-screen__wrapper-quote {
   display: flex;
   flex-direction: column;
-  margin-left: 50px;
+  max-width: 300px;
+  padding-left: 50px;
+  margin: auto;
 
   @media (min-width: $tablet-width) {
     margin-left: 72px;
@@ -99,6 +126,7 @@
 }
 
 .first-screen__quote-text {
+  margin: 0;
   margin-bottom: 18px;
   width: 151px;
 
@@ -110,6 +138,7 @@
 
 .first-screen__quote-copyright {
   font-weight: bold;
+  margin: 0;
   margin-bottom: 29px;
   width: 161px;
 
@@ -121,8 +150,9 @@
 }
 
 .first-screen__list {
-  padding: 0;
-  margin: 0;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: auto;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -139,13 +169,14 @@
   display: flex;
   justify-content: space-between;
   padding-top: 22px;
-  padding-bottom: 22px;
+  padding-bottom: 62px;
   padding-left: 24px;
   padding-right: 21px;
-  width: 270px;
+  width: 225px;
   color: $auxiliary-color;
   list-style-type: none;
   border-radius: 20px;
+  margin-top: -40px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
@@ -154,6 +185,7 @@
 
 .first-screen__item-one {
   background-color: $secondary-color;
+  margin-top: 0;
 }
 
 .first-screen__item-two {
@@ -166,6 +198,7 @@
 
 .first-screen__item-four {
   background-color: $light-color;
+  padding-bottom: 22px;
 }
 
 .first-screen__item-description {

@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 102px;
 
   @media (min-width: $tablet-width) {
     align-items: flex-start;
@@ -17,7 +18,9 @@
 .travelers__wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  padding-left: 49px;
+  padding-right: 59px;
 
   @media (min-width: $tablet-width) {
     align-items: flex-start;
@@ -27,10 +30,10 @@
 
 .travelers__title {
   color: $secondary-color;
+  margin: 0;
   font-weight: bold;
   font-size: 24px;
   line-height: 24px;
-  margin-top: 102px;
   margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
@@ -41,6 +44,7 @@
 }
 
 .travelers__description {
+  margin: 0;
   font-weight: 300;
   margin-bottom: 25px;
 
@@ -54,6 +58,7 @@
 }
 
 .travelers__slogan {
+  margin: 0;
   font-weight: bold;
   margin-bottom: 54px;
 
@@ -67,8 +72,9 @@
 }
 
 .travelers__list {
-  list-style-type: none;
+  margin: 0;
   padding: 0;
+  list-style-type: none;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -88,11 +94,31 @@
 }
 
 .travelers__button {
-  margin-top: 20px;
-  margin-bottom: 31px;
+  position: relative;
+  font-family: inherit;
+  color: $text-color;
+  background-color: $light-color;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  margin-top: 17px;
+  margin-bottom: 34px;
+  order: 1;
+  padding-left: 23px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-right: 142px;
+  border-radius: 10px;
+  border: none;
 
-  @media (min-width: $tablet-width) {
-    margin-left: auto;
-    margin-right: auto;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 233px;
+    width: 13px;
+    height: 13px;
+    background-image: url("../../img/icon_forward_arrow.svg");
+    background-repeat: no-repeat;
   }
 }

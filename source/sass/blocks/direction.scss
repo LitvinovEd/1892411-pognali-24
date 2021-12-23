@@ -1,5 +1,5 @@
 .direction {
-  margin-top: 71px;
+  padding-top: 71px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,7 +24,9 @@
 .direction__wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  padding-left: 49px;
+  padding-right: 55px;
 
   @media (min-width: $desktop-width) {
     align-items: flex-start;
@@ -47,6 +49,21 @@
   }
 }
 
+.direction__item-flag__thailand {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -39px;
+    width: 35px;
+    height: 24px;
+    background-image: url("../../img/flag_thailand.jpg");
+    background-repeat: no-repeat;
+    border-radius: 3px;
+  }
+}
+
 .direction__description {
   color: $dark-color;
   font-weight: 300;
@@ -60,8 +77,15 @@
 }
 
 .direction__list {
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $desktop-width) {
     padding-right: 171px;
@@ -71,9 +95,8 @@
 .direction__item {
   width: 270px;
   background-color: $white-color;
-  margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  list-style-type: none;
+  border-radius: 20px;
 
   @media (min-width: $tablet-width) {
     width: 618px;
@@ -84,36 +107,89 @@
   }
 }
 
-/*.direction__item-image {
+.direction__item-image {
+  border-radius: 10px;
+  z-index: 0;
+}
 
-}*/
+.direction__item-thailand {
+  width: 270px;
+  height: 110px;
+  background-image: url("../../img/thailand_mobile.jpg");
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
 
 .direction__item-title {
   color: $blak-color;
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
+  margin: 0;
 }
 
 .direction__item-slogan {
   color: $dark-color;
   opacity: 0.3;
+  margin: 0;
+  grid-row: 2/3;
 }
 
-/*.direction__item-wrapper {
-
-}*/
+.direction__item-wrapper {
+  background-color: $white-color;
+  margin-top: -12px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px 0;
+  padding: 25px;
+  align-items: baseline;
+}
 
 .direction__item-amount {
+  position: relative;
   color: $auxiliary-color;
   opacity: 0.3;
+  margin: 0;
+  margin-left: auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -18px;
+    top: 4px;
+    width: 11px;
+    height: 12px;
+    background-image: url("../../img/icon_human.svg");
+  }
 }
 
 .direction__button {
+  position: relative;
+  font-family: inherit;
   color: $text-color;
+  background-color: $light-color;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
-  margin-top: 27px;
+  margin-top: 17px;
   margin-bottom: 34px;
+  order: 1;
+  padding-left: 23px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-right: 142px;
+  border-radius: 10px;
+  border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 233px;
+    width: 13px;
+    height: 13px;
+    background-image: url("../../img/icon_forward_arrow.svg");
+    background-repeat: no-repeat;
+  }
 }

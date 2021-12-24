@@ -5,6 +5,7 @@
   background-color: $auxiliary-color;
   padding-top: 19px;
   padding-bottom: 60px;
+  margin-bottom: -1px;
 
   @media (min-width: $tablet-width) {
     padding-top: 45px;
@@ -15,7 +16,7 @@
     flex-direction: row;
     justify-content: start;
     align-items: flex-start;
-    padding-top: 47px;
+    padding-top: 67px;
     padding-bottom: 10px;
   }
 }

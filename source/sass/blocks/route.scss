@@ -1,32 +1,135 @@
 .route {
   background-color: $light-color;
+}
+
+.route__wrapper {
   padding-top: 65px;
-  padding-bottom: 35px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 618px;
+    margin: auto;
+  }
 }
 
-/*.route__wrapper-address {
+.route__wrapper-address {
+  display: flex;
+  justify-content: center;
+  width: 143px;
+  margin: auto;
+  padding-left: 86px;
+  padding-right: 91px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
 
-}*/
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-left: 40px;
+    margin: 0;
+    width: auto;
+  }
+}
 
 .route__address {
+  position: relative;
   color: $text-color;
   font-weight: bold;
+  margin: 0;
+  padding-bottom: 32px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -61px;
+    top: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: $obscure-color;
+    background-image: url("../../img/icon_location.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 28px;
+    padding-bottom: 62px;
+
+    &::before {
+      left: -108px;
+      top: -20px;
+      width: 68px;
+      height: 68px;
+    }
+  }
 }
 
-/*.route__wrapper-link {
+.route__wrapper-link {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
 
-}*/
+  @media (min-width: $tablet-width) {
+    margin-bottom: 84px;
+  }
+}
 
 .route__link {
+  position: relative;
   text-decoration: none;
   color: $text-color;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
+  padding-left: 19px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-right: 79px;
+  border-radius: 10px;
+  border: 3px solid $text-secondary-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    right: 19px;
+    width: 14px;
+    height: 16px;
+    background-image: url("../../img/icon_forward_arrow.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    padding-left: 34px;
+    padding-top: 25px;
+    padding-bottom: 24px;
+    padding-right: 355px;
+    border-radius: 20px;
+
+    &::before {
+      content: "";
+      top: 30px;
+      right: 20px;
+      width: 15px;
+      height: 15px;
+    }
+  }
 }
 
-/*.route__wrapper-map {
+.route iframe {
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
-}*/
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}

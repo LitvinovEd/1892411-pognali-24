@@ -1,25 +1,28 @@
 .interesting {
   background-color: $text-secondary-color;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-top: 105px;
   padding-bottom: 29px;
 }
 
 .interesting__wrapper {
+  background-color: $text-secondary-color;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    width: 616px;
+    margin: auto;
+  }
 }
 
 .interesting__title {
+  margin: 0;
+  margin-bottom: 19px;
   color: $secondary-color;
   font-weight: bold;
   font-size: 24px;
   line-height: 24px;
-  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     font-size: 45px;
@@ -29,10 +32,19 @@
 
 .interesting__description {
   font-weight: 300;
+  width: 210px;
+  text-align: center;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
-    width: 618px;
-    text-align: center;
+    width: auto;
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 65px;
+
+    br {
+      display: none;
+    }
   }
 }
 
@@ -44,25 +56,69 @@
   margin-bottom: 29px;
 }
 
-/*.interesting__mailing-wrapper{
-
+.interesting__mailing-wrapper {
+  display: flex;
+  flex-direction: row;
 }
 
 .interesting__mailing-field {
+  width: 195px;
+  min-height: 60px;
+  padding-left: 25px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: $fled-text-color;
+  border-radius: 10px 0 0 10px;
+  border: none;
 
+  @media (min-width: $tablet-width) {
+    padding-left: 36px;
+    width: 500px;
+    border-radius: 20px 0 0 20px;
+    min-height: 80px;
+  }
 }
 
 .interesting__mailing-button {
+  padding-left: 23px;
+  padding-top: 23px;
+  padding-bottom: 22px;
+  padding-right: 23px;
+  margin-left: -10px;
+  border-radius: 10px;
+  border: none;
+  background-color: $light-color;
 
-}*/
+  @media (min-width: $tablet-width) {
+    padding-left: 33px;
+    padding-right: 33px;
+    border-radius: 0 20px 20px 0;
+  }
+}
 
 .interesting__questions {
   font-weight: 300;
   margin-bottom: 17px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin-bottom: 64px;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .interesting__list {
   margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 127px;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 0;
@@ -73,18 +129,73 @@
   }
 }
 
-/*.interesting__item {
+.interesting__item {
+  list-style-type: none;
+  margin-bottom: 23px;
 
-}*/
+  @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
+  }
+}
 
 .interesting__phone {
+  position: relative;
   color: $light-color;
   font-weight: bold;
   text-decoration: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -61px;
+    top: -12px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: $obscure-color;
+    background-image: url("../../img/icon_phone_navigation.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      left: -105px;
+      top: -12px;
+      width: 68px;
+      height: 68px;
+    }
+  }
 }
 
 .interesting__mail {
+  position: relative;
   color: $light-color;
   font-weight: bold;
   text-decoration: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -61px;
+    top: -12px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: $obscure-color;
+    background-image: url("../../img/icon_mail_navigation.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      left: -105px;
+      top: -12px;
+      width: 68px;
+      height: 68px;
+    }
+  }
 }

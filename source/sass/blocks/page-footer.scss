@@ -2,44 +2,113 @@
   background-color: $white-color;
   padding-top: 37px;
   padding-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 46px;
+    padding-bottom: 32px;
+  }
+}
+
+.page-foote__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 688px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-/*.page-footer__wrapper-logo {
+.page-footer__wrapper-logo {
+  margin-bottom: 40px;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
 }
 
-.page-footer__link {
-
-}
-
-.page-footer__social-wrapper {
-
-}
-
-.page-footer__social-list {
-
-}
-
-.page-footer__social-item {
-
-}
-
-.page-footer__social-link {
-
-}
-
-.page-footer__delimiter {
+/*.page-footer__link {
 
 }*/
 
+.page-footer__social-wrapper {
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+}
+
+.page-footer__social-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+/*.page-footer__social-item {
+
+}*/
+
+.page-footer__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: $light-color;
+
+  @media (min-width: $tablet-width) {
+    width: 62px;
+    height: 62px;
+  }
+}
+
+.page-footer__delimiter {
+  width: 270px;
+  height: 1px;
+  background-color: $delimiter-footer-color;
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .page-footer__developers {
+  display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 270px;
+  margin-top: 14px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+  }
 }
 
 .page-footer__text {
   line-height: 16px;
   color: $dark-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

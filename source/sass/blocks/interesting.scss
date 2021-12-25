@@ -41,10 +41,12 @@
     font-size: 28px;
     line-height: 32px;
     margin-bottom: 65px;
+  }
+}
 
-    br {
-      display: none;
-    }
+.interesting__new-line {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
@@ -105,10 +107,6 @@
   @media (min-width: $tablet-width) {
     width: auto;
     margin-bottom: 64px;
-
-    br {
-      display: none;
-    }
   }
 }
 

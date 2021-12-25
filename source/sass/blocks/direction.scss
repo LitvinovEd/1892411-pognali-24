@@ -1,34 +1,60 @@
 .direction {
-  margin-top: 71px;
+  padding-top: 71px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: $add-country;
 
   @media (min-width: $tablet-width) {
-    padding-left: 75px;
-    padding-right: 75px;
+    margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 161px;
+    padding-bottom: 138px;
   }
 }
 
 .direction__order {
-  margin: 0;
+  margin: auto;
   padding: 0;
 
+  @media (min-width: $tablet-width) {
+    width: 618px;
+  }
+
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    width: 1180px;
+    display: grid;
+    grid-template-columns: 559px 380px;
+    grid-row: auto;
+    gap: 10px 172px;
+    align-items: start;
   }
 }
 
 .direction__wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  width: 216px;
+  padding-left: 49px;
+  padding-right: 55px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 378px;
+    padding-right: 270px;
+    margin-left: auto;
+  }
 
   @media (min-width: $desktop-width) {
     align-items: flex-start;
     order: 2;
+    margin: 0;
+    padding: 0;
+    grid-column: 2/3;
+    grid-row: 1/2;
   }
 }
 
@@ -47,6 +73,42 @@
   }
 }
 
+.direction__item-flag__thailand {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -39px;
+    width: 35px;
+    height: 24px;
+    background-image: url("../../img/flag_thailand.jpg");
+    background-repeat: no-repeat;
+    border-radius: 3px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 17px;
+      right: -362px;
+      width: 70px;
+      height: 47px;
+      background-image: url("../../img/flag_thailand_tablet.jpg");
+      background-repeat: no-repeat;
+      border-radius: 7px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      top: 22px;
+      right: -303px;
+    }
+  }
+}
+
 .direction__description {
   color: $dark-color;
   font-weight: 300;
@@ -60,60 +122,218 @@
 }
 
 .direction__list {
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-bottom: 46px;
+  }
 
   @media (min-width: $desktop-width) {
-    padding-right: 171px;
+    margin: 0;
+    padding: 0;
+    width: 559px;
+    grid-column: 1/2;
+    grid-row: 1/-1;
   }
 }
 
 .direction__item {
   width: 270px;
   background-color: $white-color;
-  margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  list-style-type: none;
+  border-radius: 20px;
 
   @media (min-width: $tablet-width) {
     width: 618px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     width: 559px;
+    margin-bottom: 10px;
   }
 }
 
-/*.direction__item-image {
+.direction__item-image {
+  border-radius: 10px;
+  z-index: 0;
+}
 
-}*/
+.direction__item-thailand {
+  width: 270px;
+  height: 110px;
+  background-image: url("../../img/thailand_mobile.jpg");
+  background-repeat: no-repeat;
+  border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    width: 170px;
+    height: 140px;
+    background-image: url("../../img/thailand-desktop.jpg");
+    background-repeat: no-repeat;
+    border-radius: 0 20px 20px 0;
+  }
+}
 
 .direction__item-title {
   color: $blak-color;
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+  }
 }
 
 .direction__item-slogan {
   color: $dark-color;
   opacity: 0.3;
+  margin: 0;
+  grid-row: 2/3;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
-/*.direction__item-wrapper {
+.direction__item-wrapper {
+  background-color: $white-color;
+  margin-top: -12px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px 0;
+  padding: 25px;
+  align-items: baseline;
 
-}*/
+  @media (min-width: $tablet-width) {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    padding-left: 30px;
+  }
+}
 
 .direction__item-amount {
+  position: relative;
   color: $auxiliary-color;
   opacity: 0.3;
+  margin: 0;
+  margin-left: auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -18px;
+    top: 4px;
+    width: 11px;
+    height: 12px;
+    background-image: url("../../img/icon_human.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 15px;
+    padding-top: 20px;
+    padding-left: 30px;
+    margin: 0;
+    border-radius: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 18px;
+      height: 20px;
+      background-image: url("../../img/icon_human_tablet.svg");
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 .direction__button {
+  position: relative;
+  font-family: inherit;
   color: $text-color;
+  background-color: $light-color;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
-  margin-top: 27px;
+  margin-top: 17px;
   margin-bottom: 34px;
+  margin-left: 25px;
+  margin-right: 25px;
+  order: 1;
+  padding-left: 23px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-right: 142px;
+  border-radius: 10px;
+  border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 233px;
+    width: 13px;
+    height: 13px;
+    background-image: url("../../img/icon_forward_arrow.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    padding-right: 445px;
+    padding-left: 33px;
+    padding-top: 31px;
+    padding-bottom: 27px;
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 80px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 36px;
+      left: 580px;
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 104px;
+    padding-top: 29px;
+    grid-column: 2/3;
+    margin-right: 100px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 240px;
+    }
+  }
 }

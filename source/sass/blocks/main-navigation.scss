@@ -1,13 +1,25 @@
 .main-navigation {
   background-color: $auxiliary-color;
   position: absolute;
-  top: 0;
+  top: -19px;
   width: 100%;
+  z-index: 100;
 
 
   @media (min-width: $desktop-width) {
     display: block;
-    position: relative;
+    position: static;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 2px;
+      background-color: $white-color;
+      top: 25px;
+      left: 295px;
+    }
   }
 }
 
@@ -25,9 +37,10 @@
   height: 30px;
 
   @media (min-width: $tablet-width) {
-    top: 46px;
+    top: 25px;
     left: 50%;
     right: 50%;
+    background-color: $header-color;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,7 +91,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    top: 46px;
+    top: 25px;
     left: 50%;
     right: 50%;
   }
@@ -102,12 +115,14 @@
 
 .main-navigation__wrapper {
   background-color: $white-color;
-  padding-top: 118px;
+  padding-top: 148px;
+  margin-top: -30px;
 
   @media (min-width: $desktop-width) {
-    background-color: $auxiliary-color;
+    background-color: transparent;
     display: block;
-    padding-top: 0;
+    padding-top: 15px;
+    margin-top: 0;
   }
 }
 
@@ -180,6 +195,7 @@
 
   @media (min-width: $tablet-width) {
     display: none;
+    margin: 0;
   }
 }
 
@@ -278,7 +294,7 @@
       height: 68px;
       border-radius: 50%;
       background-color: $obscure-color;
-      background-image: url("/source/img/icon_phone_navigation.svg");
+      background-size: 27px 26px;
       background-position: center;
     }
   }
@@ -319,7 +335,7 @@
       height: 68px;
       border-radius: 50%;
       background-color: $obscure-color;
-      background-image: url("/source/img/icon_phone_navigation.svg");
+      background-size: 28px 19px;
       background-position: center;
     }
   }

@@ -1,15 +1,50 @@
 .service {
+  position: relative;
   padding-top: 39px;
   padding-bottom: 82px;
-  background-color: $text-secondary-color;
   margin-top: -1px;
+  background: url("../../img/about_mobile.png") 80% 0 no-repeat,
+    url("../../img/back_about_mobile.png") 0 0 no-repeat,
+    $text-secondary-color;
+  border-radius: 0 0 40px 40px;
+  margin-bottom: -40px;
+  z-index: 10;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../../img/about_mobile@2x.png") 80% 80% no-repeat,
+      url("../../img/back_about_mobile@2x.png") 0 0 no-repeat,
+      $text-secondary-color;
+    background-size: 292px auto, 113px auto, auto;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 41px;
+    background: url("../../img/about_tablet.png") 95% 40% no-repeat,
+      url("../../img/back_about_tablet.png") 50% 0 no-repeat,
+      $text-secondary-color;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/about_tablet@2x.png") 95% 40% no-repeat,
+        url("../../img/back_about_tablet@2x.png") 50% 0 no-repeat,
+        $text-secondary-color;
+      background-size: 376px auto, 688px auto, auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 163px;
+    padding-top: 80px;
+    background: url("../../img/about_desktop.png") 95% 40px no-repeat,
+      url("../../img/back_about_desktop.png") 5% 40px no-repeat,
+      $text-secondary-color;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/about_desktop@2x.png") 95% 40px no-repeat,
+        url("../../img/back_about_desktop@2x.png") 5% 40px no-repeat,
+        $text-secondary-color;
+      background-size: 630px auto, 212px auto, auto;
+    }
+    margin-top: -40px;
   }
 }
 

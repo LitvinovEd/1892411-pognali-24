@@ -2,6 +2,19 @@
   background-color: $plan-color;
 }
 
+.add-plan-wrapper-order {
+  width: 320px;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
+
 .add-plan__wrapper {
   display: flex;
   flex-direction: row;
@@ -10,6 +23,16 @@
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
+    width: 618px;
+    margin: auto;
+    padding-top: 53px;
+    padding-bottom: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1182px;
+    padding-top: 55px;
+    padding-bottom: 54px;
   }
 }
 
@@ -23,8 +46,7 @@
   padding-left: 25px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 53px;
-    padding-left: 74px;
+    padding: 0;
     font-size: 36px;
     line-height: 36px;
   }
@@ -32,15 +54,17 @@
 
 .add-plan__slider-list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-between;
+  width: 47px;
   margin: 0;
   padding-top: 30px;
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
-    padding-top: 66px;
-    padding-right: 73px;
-    padding-left: 0;
+    padding: 0;
+    width: 76px;
   }
 }
 
@@ -52,6 +76,11 @@
   @media (min-width: $tablet-width) {
     margin-left: 75px;
     margin-right: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 60px;
+    margin-right: 60px;
   }
 }
 
@@ -78,10 +107,14 @@
 
 .add-plan__step-description {
   color: $dark-color;
+  margin: 0;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $delimiter-color;
   }
 }
 
@@ -90,9 +123,30 @@
   font-size: 20px;
   line-height: 20px;
   color: $text-color;
+  margin: 0;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 35px;
   }
+}
+
+.add-plan__slider-button {
+  padding: 0;
+  width: 5px;
+  height: 5px;
+  background-color: $text03-color;
+  border: none;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 6px;
+    height: 6px;
+  }
+}
+
+.add-plan__slider-button__active {
+  background-color: $text-color;
 }

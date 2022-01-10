@@ -1,5 +1,12 @@
 .add-country {
   background-color: #edeff6;
+  border-radius: 4px;
+
+  @media (min-width: $tablet-width) {
+    width: 370px;
+    grid-template-columns: 306px 64px;
+    gap: 0;
+  }
 }
 
 .add-country__title {
@@ -8,7 +15,21 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $text-color;
+  margin: 0;
+  padding-left: 10px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 26px;
+    padding-top: 23px;
+    padding-bottom: 27px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
-/* .add-country__button {
-}*/
+.add-country__button {
+  border: none;
+  background-color: transparent;
+}

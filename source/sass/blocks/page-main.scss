@@ -1,3 +1,50 @@
 .page-main {
   margin: 0;
 }
+
+.page-main-title {
+  background-color: #161c35;
+  position: relative;
+  padding-left: 25px;
+  padding-right: 80px;
+  margin: auto;
+  padding-bottom: 16px;
+  color: $white-color;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 214px;
+    height: 5px;
+    background-color: $secondary-color;
+    border-radius: 4px;
+    top: 50px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 75px;
+    padding-right: 335px;
+    padding-bottom: 66px;
+    font-size: 60px;
+    line-height: 60px;
+
+    &::before {
+      width: 358px;
+      height: 8px;
+      background-color: $secondary-color;
+      border-radius: 4px;
+      top: 122px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 824px;
+    padding-bottom: 68px;
+    margin: auto;
+  }
+}

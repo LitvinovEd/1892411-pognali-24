@@ -1,16 +1,25 @@
 /*.step-three {
 
-}
-
-.step-three-wrapper {
-
 }*/
 
+.step-three-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  margin-top: 27px;
+}
+
 .step-three__title {
+  margin: 0;
   font-weight: bold;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 18px;
   color: $text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 /*.step-three__image {
@@ -19,30 +28,93 @@
 
 .step-three__form {
 
-}
-
-.step-three__plan {
-
 }*/
 
+.step-three__plan {
+  min-height: 188px;
+  width: 188px;
+  padding: 15px;
+  border: 1px solid $border-color;
+  border-radius: 4px;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    min-height: 145px;
+  }
+}
+
 .step-three__next-step {
+  background-color: $light-color;
   text-decoration: none;
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
   color: $text-color;
+  padding: 8px 70px;
+  border-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-left: 34px;
+    padding-top: 29px;
+    padding-bottom: 27px;
+    padding-right: 139px;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 33px;
+      left: 227px;
+      width: 14px;
+      height: 14px;
+      background-image: url("../../img/icon_forward_arrow.svg");
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 .step-three__next-step__wrapper {
-  background-color: $light-color;
+  margin-top: 22px;
+  margin-bottom: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .step-three__back-step {
+  display: block;
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
   color: $text-color;
   text-decoration: none;
+  width: 220px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-transform: none;
+    position: relative;
+    text-align: end;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 20px;
+      width: 14px;
+      height: 14px;
+      background-image: url("../../img/icon_forward_arrow.svg");
+      background-repeat: no-repeat;
+      transform: rotate(180deg);
+    }
+  }
 }

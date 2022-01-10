@@ -10,25 +10,56 @@
   @media (min-width: $tablet-width) {
     padding-top: 45px;
     padding-bottom: 72px;
+    background-color: $header-color;
   }
 
   @media (min-width: $desktop-width) {
+    background-color: $desktop-color;
     flex-direction: row;
     justify-content: start;
     align-items: flex-start;
     padding-top: 67px;
     padding-bottom: 10px;
+    z-index: 1;
+  }
+}
+
+.page-header__wrapper {
+  width: 320px;
+  position: relative;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.page-header__logo-wrapper {
+  margin-left: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 60px;
   }
 }
 
 .page-header__logo {
-  padding-left: 26px;
-
   @media (min-width: $tablet-width) {
-    padding-left: 40px;
+    width: 166px;
+    height: 42px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 60px;
+    width: 200px;
+    height: 50px;
   }
 }

@@ -1,13 +1,27 @@
 .my-plans {
   background-color: $modal-color;
-  margin-top: 34px;
   padding-bottom: 59px;
 }
 
+.my-plans__wrapper-order {
+  width: 320px;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 618px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1258px;
+  }
+}
+
 .my-plans__title {
+  margin: 0;
   font-weight: bold;
   font-size: 24px;
   line-height: 24px;
+  padding-bottom: 29px;
   color: $text-color;
   padding-left: 25px;
   padding-top: 28px;
@@ -16,11 +30,13 @@
     font-weight: bold;
     font-size: 36px;
     line-height: 36px;
+    padding-left: 0;
   }
 }
 
 .my-plans__wrapper {
   background-color: $white-color;
+  width: 245px;
   border-radius: 10px;
   margin-left: 25px;
   margin-right: 25px;
@@ -28,13 +44,18 @@
   padding-left: 25px;
 
   @media (min-width: $tablet-width) {
+    box-sizing: border-box;
     padding-left: 40px;
     padding-right: 32px;
+    width: 618px;
+    margin: 0;
+    margin-bottom: 11px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    width: 1258px;
   }
 }
 
@@ -49,12 +70,14 @@
 
 .my-plans__wrapper-plan {
   margin: 0;
+  padding-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 0;
   }
 }
 

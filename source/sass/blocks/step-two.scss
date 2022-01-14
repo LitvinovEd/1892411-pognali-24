@@ -3,6 +3,7 @@
 }*/
 
 .step-two__wrapper {
+  position: relative;
   display: grid;
   grid-template-columns: 168px 53px;
   margin-bottom: 22px;
@@ -19,9 +20,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   border: 1px solid $border-color;
   border-radius: 4px;
+  height: 40px;
+
+  @media (min-width: $tablet-width) {
+    height: 70px;
+  }
 }
 
 .step-two__country-selection__flag {
@@ -31,7 +36,6 @@
 }
 
 .step-two__country-choice {
-  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -42,6 +46,16 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 326px;
+      top: -271px;
+      left: 396px;
+      background-color: $border-color;
+    }
   }
 }
 
@@ -70,7 +84,7 @@
     height: 10px;
     background-color: transparent;
     background-image: url("../../img/icon_arrow_down.svg");
-    top: 52px;
+    top: 48px;
     right: 47px;
     z-index: 2;
   }
@@ -80,7 +94,7 @@
       width: 14px;
       height: 14px;
       top: 27px;
-      right: -36px;
+      right: 133px;
     }
 
     &::after {
@@ -95,10 +109,11 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  color: $text-color;
   padding-left: 10px;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  background-color: $white-color;
+  color: $text-color;
 
   @media (min-width: $tablet-width) {
     padding-left: 26px;
@@ -133,7 +148,7 @@
     height: 10px;
     background-color: transparent;
     background-image: url("../../img/icon_arrow_down.svg");
-    top: 52px;
+    top: 48px;
     right: -5px;
     z-index: 2;
   }
@@ -142,7 +157,7 @@
     &::before {
       width: 14px;
       height: 14px;
-      top: 30px;
+      top: 27px;
       right: -35px;
     }
 
@@ -167,17 +182,26 @@
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
-    top: 27px;
+    top: 20px;
     right: 0;
+    width: 22px;
+    height: 22px;
+    background-size: 100%;
   }
 }
 
 
 .step-two__wrapper-open {
-  position: absolute;
-  border: 1px solid $border-color;
-  border-radius: 4px;
   display: none;
+  background-color: $white-color;
+  position: absolute;
+  border-radius: 4px;
+  z-index: 50;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    border: none;
+  }
 }
 
 .step-two__wrapper-choice {
@@ -186,6 +210,11 @@
   color: $white-color;
   background-color: $text-color;
   border-radius: 4px 4px 0 0;
+
+
+  @media (min-width: $tablet-width) {
+    width: 369px;
+  }
 }
 
 /*.step-two__alphabet-wrapper {
@@ -194,7 +223,13 @@
 
 .step-two__country-image {
   border-radius: 2px;
-  padding: 9px;
+  padding-top: 9px;
+  padding-left: 9px;
+
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: auto;
+  }
 }
 
 .step-two__next-step__wrapper {
@@ -249,6 +284,7 @@
   text-decoration: none;
   display: block;
   text-align: center;
+  margin-top: 13px;
 
   @media (min-width: $tablet-width) {
     text-transform: none;
@@ -275,6 +311,7 @@
 
 .step-two__country-open {
   color: $white-color;
+  background-color: $text-color;
 }
 
 .step-two__close-button_country {
@@ -282,4 +319,5 @@
   padding-right: 17px;
   border: none;
   cursor: pointer;
+  border-radius: 0 4px 0 0;
 }

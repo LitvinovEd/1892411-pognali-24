@@ -20,6 +20,13 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1320px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__wrapper-logo {

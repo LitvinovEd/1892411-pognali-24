@@ -102,37 +102,6 @@
             Европа
           </li>
         </ul>
-        <div class="alphabet">
-          <ul class="alphabet__list">
-            <li class="alphabet__item">
-              <a class="alphabet__link" href="#">А</a>
-            </li>
-            <li class="alphabet__item">
-              <a class="alphabet__link" href="#">Б</a>
-            </li>
-            <li class="alphabet__item">
-              <a class="alphabet__link" href="#">В</a>
-            </li>
-            <li class="alphabet__item">
-              <a class="alphabet__link" href="#">Г</a>
-            </li>
-            <li class="alphabet__item">
-              <a class="alphabet__link" href="#">Д</a>
-            </li>
-          </ul>
-          <ul class="alphabet__countries-list">
-            <li class="alphabet__countries-item">
-              Австалия
-            </li>
-            <li class="alphabet__countries-item">
-              Австрия
-            </li>
-            <li class="alphabet__countries-item">
-              Азербайжан
-            </li>
-          </ul>
-          <button class="alphabet__button" type="button">Свернуть</button>
-        </div>
       </div>
     </form>
     <section class="companion">
@@ -525,22 +494,6 @@
     </div>
   </footer>
 </body>
-<script>
-  var navMain = document.querySelector('.main-navigation');
-  var navToggle = document.querySelector('.main-navigation__toggle');
-
-  navMain.classList.remove('main-navigation--nojs');
-
-  navToggle.addEventListener('click', function () {
-    if (navMain.classList.contains('main-navigation--closed')) {
-      navMain.classList.remove('main-navigation--closed');
-      navMain.classList.add('main-navigation--opened');
-    } else {
-      navMain.classList.add('main-navigation--closed');
-      navMain.classList.remove('main-navigation--opened');
-    }
-  });
-
-</script>
+<script src="js/script.js"></script>
 
 </html>

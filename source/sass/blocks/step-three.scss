@@ -2,11 +2,17 @@
 
 }*/
 
-.step-three-wrapper {
+.step-three__wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 18px;
-  margin-top: 27px;
+  align-items: center;
+  margin-bottom: 9px;
+  margin-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
+    margin-right: 35px;
+  }
 }
 
 .step-three__title {
@@ -15,6 +21,7 @@
   font-size: 18px;
   line-height: 18px;
   color: $text-color;
+  padding-left: 10px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -22,24 +29,36 @@
   }
 }
 
-/*.step-three__image {
-
+.step-three__image {
+  @media (min-width: $tablet-width) {
+    width: 70px;
+    height: 47px;
+  }
 }
 
 .step-three__form {
+  width: 220px;
+  height: 220px;
 
-}*/
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    height: 142px;
+  }
+}
 
 .step-three__plan {
-  min-height: 188px;
+  height: 188px;
   width: 188px;
   padding: 15px;
   border: 1px solid $border-color;
   border-radius: 4px;
+  resize: none;
 
   @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    display: block;
     width: 500px;
-    min-height: 145px;
+    height: 110px;
   }
 }
 
@@ -78,11 +97,16 @@
 }
 
 .step-three__next-step__wrapper {
-  margin-top: 22px;
-  margin-bottom: 13px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  margin-top: 23px;
+
+
+  @media (min-width: $tablet-width) {
+    margin-top: 22px;
+    margin-bottom: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .step-three__back-step {
@@ -95,6 +119,7 @@
   text-decoration: none;
   width: 220px;
   text-align: center;
+  margin-top: 13px;
 
   @media (min-width: $tablet-width) {
     text-transform: none;
@@ -115,6 +140,32 @@
       background-image: url("../../img/icon_forward_arrow.svg");
       background-repeat: no-repeat;
       transform: rotate(180deg);
+    }
+  }
+}
+
+.step-three__decorative {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -275px;
+    left: -15px;
+    width: 19px;
+    height: 288px;
+    background-image: url("../../img/form_decorative_element.png");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: -254px;
+      left: 515px;
+      width: 19px;
+      height: 280px;
+      background-image: url("../../img/form_decorative_element_tablet.png");
+      background-repeat: no-repeat;
     }
   }
 }

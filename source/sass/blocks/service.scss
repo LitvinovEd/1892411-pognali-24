@@ -1,14 +1,25 @@
 .service {
   position: relative;
-  padding-top: 39px;
-  padding-bottom: 82px;
   margin-top: -1px;
-  background: url("../../img/about_mobile.png") 80% 0 no-repeat,
-    url("../../img/back_about_mobile.png") 0 0 no-repeat,
-    $text-secondary-color;
   border-radius: 0 0 40px 40px;
   margin-bottom: -40px;
   z-index: 10;
+  background-color: $text-secondary-color;
+}
+
+.service__wrapper {
+  padding-top: 39px;
+  padding-bottom: 82px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 211px;
+  padding-left: 49px;
+  padding-right: 60px;
+  margin: auto;
+  background: url("../../img/about_mobile.png") 80% 0 no-repeat,
+    url("../../img/back_about_mobile.png") 0 0 no-repeat,
+    $text-secondary-color;
 
   @media (min-resolution: 2dppx) {
     background: url("../../img/about_mobile@2x.png") 80% 80% no-repeat,
@@ -18,10 +29,16 @@
   }
 
   @media (min-width: $tablet-width) {
+    align-items: flex-start;
+    padding-left: 74px;
+    padding-right: 386px;
+    width: 308px;
+    margin: auto;
     padding-top: 41px;
     background: url("../../img/about_tablet.png") 95% 40% no-repeat,
       url("../../img/back_about_tablet.png") 50% 0 no-repeat,
       $text-secondary-color;
+    border-radius: 30px;
 
     @media (min-resolution: 2dppx) {
       background: url("../../img/about_tablet@2x.png") 95% 40% no-repeat,
@@ -32,11 +49,16 @@
   }
 
   @media (min-width: $desktop-width) {
+    align-items: flex-start;
+    width: 1180px;
+    margin: auto;
+    padding: 0;
     padding-bottom: 163px;
     padding-top: 80px;
     background: url("../../img/about_desktop.png") 95% 40px no-repeat,
       url("../../img/back_about_desktop.png") 5% 40px no-repeat,
       $text-secondary-color;
+    margin-top: -40px;
 
     @media (min-resolution: 2dppx) {
       background: url("../../img/about_desktop@2x.png") 95% 40px no-repeat,
@@ -44,32 +66,6 @@
         $text-secondary-color;
       background-size: 630px auto, 212px auto, auto;
     }
-    margin-top: -40px;
-  }
-}
-
-.service__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 211px;
-  padding-left: 49px;
-  padding-right: 60px;
-  margin: auto;
-
-  @media (min-width: $tablet-width) {
-    align-items: flex-start;
-    padding-left: 0;
-    padding-right: 310px;
-    width: 308px;
-    margin: auto;
-  }
-
-  @media (min-width: $desktop-width) {
-    align-items: flex-start;
-    width: 1180px;
-    margin: auto;
-    padding: 0;
   }
 }
 

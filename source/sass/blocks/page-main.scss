@@ -3,7 +3,7 @@
 }
 
 .page-main-title {
-  background-color: #161c35;
+  background-color: $auxiliary-color;
   position: relative;
   padding-left: 25px;
   padding-right: 80px;
@@ -31,6 +31,7 @@
     padding-bottom: 66px;
     font-size: 60px;
     line-height: 60px;
+    background-color: $header-color;
 
     &::before {
       width: 358px;
@@ -45,6 +46,7 @@
     padding-left: 0;
     padding-right: 824px;
     padding-bottom: 68px;
+    padding-top: 136px;
     margin: auto;
   }
 }

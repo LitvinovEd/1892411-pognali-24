@@ -88,7 +88,7 @@
   background-color: $white-color;
   padding: 25px;
   margin-bottom: 10px;
-  border-radius: 30px;
+  border-radius: 10px;
 
   @media (min-width: $tablet-width) {
     padding-left: 40px;
@@ -109,6 +109,7 @@
   color: $dark-color;
   margin: 0;
   padding-bottom: 20px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

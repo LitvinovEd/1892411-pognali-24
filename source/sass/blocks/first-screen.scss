@@ -12,7 +12,7 @@
 
   @media (min-resolution: 2dppx) {
     background:url("../../img/traveller_illustration_mobile@2x.png") 55% 18% no-repeat,
-      url("../../img/globe_back_mobile@2x.jpg") 50% -24% no-repeat,
+      url("../../img/globe_back_mobile@2x.jpg") 50% -105px no-repeat,
       $auxiliary-color;
     background-size: 192px auto, 320px auto, auto;
   }
@@ -105,12 +105,6 @@
   align-items: center;
   margin: 0;
   padding: 0;
-
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    top: -50px;
-    right: 60px;
-  }
 }
 
 .first-screen__contacts-item {
@@ -118,24 +112,6 @@
 
   @media (min-width: $tablet-width) {
     display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: block;
-  }
-}
-
-.first-screen__contacts-item__login {
-  @media (min-width: $tablet-width) {
-    display: block;
-    position: absolute;
-    top: -115px;
-    right: 40px;
-    z-index: 9999;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: static;
   }
 }
 
